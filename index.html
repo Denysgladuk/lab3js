@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Виведення інформації JavaScript</title>
+</head>
+<body>
+    <h1>Виведення інформації JavaScript</h1>
+    
+    <h2>document.write()</h2>
+    <div id="write-output"></div>
+    
+    <h2>window.alert()</h2>
+    <button onclick="showAlert()">Показати alert</button>
+    
+    <h2>console.log()</h2>
+    <p>Відкрийте консоль браузера, щоб побачити вивід console.log()</p>
+    
+    <h2>innerHTML</h2>
+    <div id="inner-output"></div>
+    
+    <script>
+        // document.write()
+        document.getElementById("write-output").innerHTML = "<p>Це виведення за допомогою document.write()</p>";
+        
+        // window.alert()
+        function showAlert() {
+            window.alert("Це вивід за допомогою window.alert()");
+        }
+        
+        // console.log()
+        console.log("Це вивід за допомогою console.log()");
+        
+        // innerHTML
+        document.getElementById("inner-output").innerHTML = "<p>Це виведення за допомогою innerHTML</p>";
+    </script>
+</body>
+</html>
